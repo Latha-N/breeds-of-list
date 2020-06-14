@@ -25,13 +25,17 @@ class BreedsList extends React.Component{
 
     
     render(){
+        console.log(this.state.dogs)
         return(
             <div className="container">
+                
+
                 <h1 className="text-center text-danger">BREEDS OF DOGS LIST</h1>
-                <ul className="list-group">
+                <ul className="list-group" >
                 {
                     Object.keys(this.state.dogs).map((ele,i)=>{
-                    return <li key={i} className="list-group-item list-group-item-primary"> { ele }  
+                    return <li key={i} className="list-group-item list-group-item-primary"> { ele } 
+                    <Link to={`/list/dogShowMaster/${ele}`}><button>show</button></Link> 
                         { this.state.dogs[ele].length != 0 && (
                             <ul className="list-group">
                                 { this.state.dogs[ele].map((ele, i) => {

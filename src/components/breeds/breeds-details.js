@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 
 class BreedDetail extends React.Component{
+    
     constructor(){
         super()
         this.state={
@@ -19,6 +20,8 @@ class BreedDetail extends React.Component{
     render(){
         return(
             <div className="container">
+            
+
                 <h1>Random Image</h1>
                  {this.state.message?<img src={this.state.message} alt="no image found"/>:<h6>NO IMAGE TO DISPLAY</h6>} 
             </div>
