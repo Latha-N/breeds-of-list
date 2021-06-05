@@ -30,3 +30,6 @@ class BreedDetail extends React.Component{
 }
 export default BreedDetail
 
+
+
+
